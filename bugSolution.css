@@ -1,0 +1,11 @@
+The issue was caused by a missing space between the units and operators within the `calc()` function.  Adding spaces resolved the issue. 
+
+Incorrect CSS (bug.css):
+```css
+#myElement { width:calc(100%-10px); }
+```
+
+Correct CSS (bugSolution.css):
+```css
+#myElement { width: calc(100% - 10px); }
+```
